@@ -4,7 +4,7 @@ Naive bayesian classifying program for use with accept/reject. Takes in a Pandas
 
 Soon to come:  
 -Functionality for nan values  
--Gaussian Naive Bayes methods for use with continuous variables
+-Gaussian Naive Bayes methods for use with continuous variables  
 -Accept/Reject methods for use with resampling
 
 Summary:
