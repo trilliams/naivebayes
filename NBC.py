@@ -46,7 +46,10 @@ class NBC():
                 for point in self.classes[keylabel][attribute]:
                     self.thetas[keylabel][attribute][point] = \
                             self.thetas[keylabel][attribute].get(point,0) + 1
-                norm = float(sum(self.thetas[keylabel][attribute].values()))
+                norm = float(sum(self.thetas[keylabel][attribute].values())\
+                             +len(self.attributes)*self.smooth)
+                #The above norm allows for us to keep all probabilities
+                #summing to one by changing the denominator to m + k
                 for key in self.thetas[keylabel][attribute].keys():
                     self.thetas[keylabel][attribute][key] /= norm
 
