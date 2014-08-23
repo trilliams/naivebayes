@@ -7,5 +7,8 @@ Soon to come:
 -Gaussian Naive Bayes methods for use with continuous variables  
 -Accept/Reject methods for use with resampling
 
-Summary:
+Dependencies:  
+Pandas, Numpy
+
+Summary:  
 naivebayes is a set of classifying algorithms built for use with accept/reject resampling. It is intended to be functional for both discrete-valued attributes under standard naive bayes and continuous-valued ones under gaussian naive bayes. Using a sample from a prior distribution, it will allow you to resample a data set into one in line with the posterior distribution of the function.
